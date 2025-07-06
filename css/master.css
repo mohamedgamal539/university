@@ -1,0 +1,1671 @@
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* Start Components */
+
+.section > .text {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 64px;
+}
+
+.section > .text p:first-of-type {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 19px;
+}
+
+.section > .text p:last-of-type {
+    color: gray;
+    line-height: 1.4;
+}
+
+/* End Components */
+
+/* Start Landing Page */
+
+.landing {
+    background-image: linear-gradient(to right, #04091e66, #04091e66), url(../images/uni-hall.jpeg);
+    background-color: #eee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.landing header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 3px 4px 18px;
+    isolation: isolate;
+}
+
+.landing header a img {
+    width: 90px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.landing header > a:hover img {
+    transform: rotate(360deg);
+}
+
+.landing header ul {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .landing header ul {
+        display: none;
+    }
+}
+
+.landing header ul li a {
+    text-decoration: none;
+    margin-right: 28px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.landing header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #006aff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    transition: 0.6s;
+}
+
+.landing header ul li a:hover::after {
+    width: 100%;
+}
+
+.landing header ul li:nth-child(3) a {
+    text-transform: capitalize;
+}
+
+.landing header i {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .landing header i {
+        display: block;
+        color: white;
+        margin-right: 19px;
+        font-size: 30px;
+    }
+}
+
+.landing .text {
+    isolation: isolate;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+}
+
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1287px) {
+    .landing .text {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.landing .text h1 {
+    font-size: 3.4em;
+    font-weight: 600;
+    width: 922px;
+    margin: 0.80em auto;
+}
+
+@media (max-width: 767px) {
+    .landing .text h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 1199px) {
+    .landing .text h1 {
+        width: fit-content;
+    }
+}
+
+.landing .text p {
+    color: #FFF;
+    line-height: 1.6;
+    font-size: 20px;
+    width: 1400px;
+    margin-bottom: 52px;
+}
+
+@media (max-width: 1287px) {
+    .landing .text p {
+        width: fit-content;
+    }
+}
+
+.landing .text a {
+    background: transparent;
+    color: #FFF;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding: 9px 11px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.landing .text a:hover {
+    background-color: #006aff;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.5s;
+}
+
+.landing .right-side-common {
+    position: absolute;
+    right: -216px;
+    top: 0;
+    background-color: #006aff;
+    height: 100vh;
+    transition: 1s;
+}
+
+.landing .right-side-common i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.landing .right-side-common a {
+    display: block;
+    margin: 38px 108px 0 22px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.landing .right-side-common a:first-of-type {
+    margin-top: 68px;
+}
+
+/* End Landing Page */
+
+/* Start Section Courses */
+
+.courses .text {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 64px;
+}
+
+.courses .text p:first-of-type {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 19px;
+}
+
+.courses .text p:last-of-type {
+    color: gray;
+    line-height: 1.4;
+}
+
+.courses .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .courses .container {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .courses .container {
+        grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .courses .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.courses .container .box {
+    background-color: #bae4f9;
+    margin-right: 27px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 26px 6px;
+    min-width: 140px;
+    transition: 0.7s;
+}
+
+@media (max-width: 767px) {
+    .courses .container .box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 14px;
+        padding: 26px 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .courses .container .box {
+        padding: 26px 14px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .courses .container .box {
+        padding: 26px 25px;
+    }
+}
+
+.courses .container .box:hover {
+    box-shadow: 0px 0px 9px 5px #88b9ff;
+}
+
+.courses .container .box h3 {
+    margin-bottom: 16px;
+}
+
+.courses .container .box p {
+    color: gray;
+    line-height: 1.5;
+}
+
+/* End Section Courses */
+
+/* Start Section Compus*/
+
+.compus .text {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 64px;
+}
+
+.compus .text p:first-of-type {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 19px;
+}
+
+.compus .text p:last-of-type {
+    color: gray;
+    line-height: 1.4;
+}
+
+.compus .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .compus .container {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .compus .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.compus .container .image {
+    margin-right: 28px;
+    position: relative;
+    overflow: hidden;
+    height: calc(547px + 6px);
+    transition: 1s;
+}
+
+@media (max-width: 767px) {
+    .compus .container .image {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+}
+
+@media (max-width: 991px) {
+    .compus .container .image {
+        margin-bottom: 28px;
+    }
+}
+
+.compus .container .image::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(83, 188, 241, 0.4);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 25px;
+    opacity: 0;
+    border-radius: 16px;
+    will-change: transform, opacity;
+    transition: 0.7s;
+}
+
+.compus .container .image:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.compus .container .image img {
+    width: 100%;
+    height: 99%;
+    border-radius: 16px;
+    border-bottom-right-radius: 7px 19px;
+    border-bottom-left-radius: 7px 19px;
+}
+
+/* End Section Compus*/
+
+/* Start Section Facilities */
+
+.facilities.with-border {
+    border-bottom: 1px solid rgb(154 154 154);
+    padding-bottom: 25px;
+    margin-bottom: 17px;
+}
+
+.facilities.no-border {
+    margin-bottom: 125px;
+}
+
+.facilities .text {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 64px;
+}
+
+.facilities .text p:first-of-type {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 19px;
+}
+
+.facilities .text p:last-of-type {
+    color: gray;
+    line-height: 1.4;
+}
+
+.facilities .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .facilities .container {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .facilities .container {
+        grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    }
+}
+
+.facilities .container .box {
+    margin-right: 14px;
+}
+
+@media (max-width: 767px) {
+    .facilities .container .box {
+        margin: 0 31px 31px;
+    }
+}
+
+.facilities .container .box .image {
+    width: 372px;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 767px) {
+    .facilities .container .box .image {
+        width: 534px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container .box .image {
+        width: 241px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .facilities .container .box .image {
+        width: 314px;
+    }
+}
+
+.facilities .container .box:first-of-type .image {
+    height: calc(283px + 79px);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container .box:first-of-type .image {
+        height: 412px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .facilities .container .box:first-of-type .image {
+        height: 412px;
+    }
+}
+
+.facilities .container .box:nth-of-type(2) .image {
+    height: 500px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container .box:nth-of-type(2) .image {
+        height: 412px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .facilities .container .box:nth-of-type(2) .image {
+        height: 412px;
+    }
+}
+
+.facilities .container .box:nth-of-type(3) .image {
+    height: calc(252px + 79px);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container .box:nth-of-type(3) .image {
+        height: 412px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .facilities .container .box:nth-of-type(3) .image {
+        height: 412px;
+    }
+}
+
+.facilities .container .box .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+}
+
+@media (max-width: 767px) {
+    .facilities .container .box .image img {
+        max-width: 100%;
+    }
+}
+
+.facilities .container .box h3,
+.facilities .container .box p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.facilities .container .box p {
+    color: gray;
+}
+
+@media (max-width: 767px) {
+    .facilities .container .box p {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .facilities .container .box p {
+        width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1287px) {
+    .facilities .container .box p {
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* End Section Facilities */
+
+/* Start Section Student */
+
+.student > .text {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 64px;
+}
+
+.student > .text p:first-of-type {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.student > .text p:last-of-type {
+    color: gray;
+    line-height: 1.4;
+}
+
+.student .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    margin-bottom: 172px;
+}
+
+@media (max-width: 767px) {
+    .student .container {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .student .container {
+        grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .student .container {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
+}
+
+.student .container .box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #8dbeef66;
+    margin-right: 28px;
+    padding: 25px 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+    .student .container .box {
+        width: 72%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 28px;
+    }
+}
+
+.student .container .box .image {
+    width: 27px;
+    margin-right: 25px;
+    margin-left: 33px;
+}
+
+@media (max-width: 767px) {
+    .student .container .box .image {
+        width: 82px;
+        min-width: 26px;
+    }
+}
+
+.student .container .box .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.student .container .box .text h3 {
+    margin-bottom: 4px;
+}
+
+.student .container .box .text p {
+    width: 272px;
+    color: gray;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .student .container .box .text p {
+        width: fit-content;
+        padding-right: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .student .container .box .text p {
+        width: 103px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .student .container .box .text p {
+        width: 161px;
+    }
+}
+
+.student .container .box .stars i {
+    color: rgb(255 0 0);
+}
+
+/* End Section Student */
+
+/* Start Section Enroll */
+
+.enroll {
+    margin-bottom: 164px;
+}
+
+.enroll .container {
+    background-image: url(../images/enroll.jpg);
+    background-color: #eee;
+    height: 540px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .enroll .container {
+        width: 86%;
+    } 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .enroll .container {
+        width: calc(970px - 155px);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1287px) {
+    .enroll .container {
+        width: calc(1170px - 155px);
+    }
+}
+
+.enroll .container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+    left: 0;
+    top: 0;
+}
+
+.enroll .container .text {
+    isolation: isolate;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .enroll .container .text {
+        width: 90%;
+    }
+}
+
+.enroll .container .text h1 {
+    color: white;
+    font-size: 3em;
+    width: 1012px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .enroll .container .text h1 {
+        font-size: 1.2em;
+        width: 483px;
+        margin-bottom: 1.7em;
+        width: fit-content;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .enroll .container .text h1 {
+        width: 686px;
+    } 
+}
+
+@media (min-width: 992px) and (max-width: 1287px) {
+    .enroll .container .text h1 {
+        width: 1000px;
+    } 
+}
+
+.enroll .container .text a {
+    background: transparent;
+    color: #FFF;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding: 13px 11px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.enroll .container a:hover {
+    background-color: #006aff;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.5s;
+}
+
+/* End Section Enroll */
+
+/* Start Footer */
+
+footer {
+    text-align: center;
+}
+
+footer p:first-of-type {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+footer p:nth-of-type(2) {
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1287px) {
+    footer p:nth-of-type(2) {
+        width: fit-content;
+        padding: 0 36px;
+    }
+}
+
+footer .social {
+    margin-bottom: 25px;
+}
+
+footer .social i {
+    margin-right: 19px;
+    margin-left: 19px;
+}
+
+@media (max-width: 239px) {
+    footer .social i {
+        margin-bottom: 6px;
+    }
+}
+
+footer p:last-of-type {
+    color: gray;
+    margin-bottom: 42px;
+    line-height: 190%;
+}
+
+footer p:last-of-type i {
+    color: #F00;
+}
+
+/* End Footer */
+
+/* Start Section About Landing */
+
+.sec-common {
+    background-image: url(../images/graduate.jpg);
+    background-color: #aaa;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 177px;
+}
+
+.sec-common::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 35%);
+    left: 0;
+    top: 0;
+}
+
+.sec-common header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 3px 4px 18px;
+    isolation: isolate;
+}
+
+.sec-common header a img {
+    width: 90px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.sec-common header > a:hover img {
+    transform: rotate(360deg);
+}
+
+.sec-common header ul {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .sec-common header ul {
+        display: none;
+    }
+}
+
+.sec-common header ul li a {
+    text-decoration: none;
+    margin-right: 28px;
+    color: #FFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.sec-common header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #006aff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    transition: 0.6s;
+}
+
+.sec-common header ul li a:hover::after {
+    width: 100%;
+}
+
+.sec-common header ul li:nth-child(3) a {
+    text-transform: capitalize;
+}
+
+.sec-common header i {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .sec-common header i {
+        display: block;
+        color: white;
+        margin-right: 19px;
+        font-size: 30px;
+    }
+}
+
+.sec-common h1 {
+    isolation: isolate;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-common .right-side-common {
+    position: absolute;
+    right: -216px;
+    top: 0;
+    background-color: #006aff;
+    height: 100vh;
+    transition: 1s;
+}
+
+.sec-common .right-side-common i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.sec-common .right-side-common a {
+    display: block;
+    margin: 38px 108px 0 22px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.sec-common .right-side-common a:first-of-type {
+    margin-top: 68px;
+}
+
+/* End Section About Landing */
+
+/* Start Section Future */
+
+.future .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-bottom: 160px;
+}
+
+@media (max-width: 767px) {
+    .future .container {
+        display: block;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .future .container {
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .future .container {
+        grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    }
+}
+
+.future .container .text {
+    margin-top: -28px;
+}
+
+@media (max-width: 767px) {
+    .future .container .text {
+        text-align: center;
+    }
+}
+
+.future .container .text h1 {
+    width: 472px;
+    line-height: 1.5;
+    margin-bottom: 0.50em;
+}
+
+@media (max-width: 767px) {
+    .future .container .text h1 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 21px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .future .container .text h1 {
+        width: 388px;
+    }
+}
+
+.future .container .text p {
+    color: gray;
+    line-height: 1.5;
+    width: 499px;
+}
+
+@media (max-width: 767px) {
+    .future .container .text p {
+        width: fit-content;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .future .container .text p {
+        width: 388px;
+    }
+}
+
+.future .container .text a {
+    text-decoration: none;
+    color: #2781ff;
+    text-transform: uppercase;
+    border: 1px solid #2781ff;
+    padding: 12px 14px;
+    margin-top: 28px;
+    display: block;
+    width: fit-content;
+    border-radius: 7px;
+    transition: 0.7s;
+}
+
+@media (max-width: 767px) {
+    .future .container .text a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.future .container .text a:hover {
+    background-color: #006aff;
+    color: rgb(255 255 255);
+    border: none;
+}
+
+.future .container .image {
+    width: 486px;
+}
+
+@media (max-width: 767px) {
+    .future .container .image {
+        width: 386px;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .future .container .image {
+        width: 358px;
+        height: 208px;
+        margin-left: 22px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .future .container .image {
+        width: 413px;
+        height: 267px;
+    }
+}
+
+.future .container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* End Section Future */
+
+/* Start Section Categories */
+
+.categories .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-bottom: 34px;
+}
+
+@media (max-width: 767px) {
+    .categories .container {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        margin-bottom: -176px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .categories .container {
+        grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+        margin-bottom: -17px;
+    }
+}
+
+.categories .container .image {
+    width: 775px;
+}
+
+@media (max-width: 767px) {
+    .categories .container .image {
+        max-width: 100%;
+        margin-left: 38px;
+        margin-right: 38px;
+        width: calc(100% - (38px * 2));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .container .image {
+        width: 497px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .categories .container .image {
+        width: 610px;
+        height: 387px;
+    }
+}
+
+.categories .container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .categories .container .image img {
+        max-width: 100%;
+    }
+}
+
+.categories .container .text {
+    margin-left: 208px;
+}
+
+@media (max-width: 767px) {
+    .categories .container .text {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .container .text {
+        margin-left: 134px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .categories .container .text {
+        margin-left: 137px;
+    }
+}
+
+.categories .container .text .post {
+    background-color: #0091ff;
+    width: 377px;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .container .text .post {
+        width: 214px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .categories .container .text .post {
+        width: 285px;
+    }
+}
+
+.categories .container .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .container .category {
+        width: 214px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .categories .container .category {
+        width: 285px;
+    }
+}
+
+/* End Section Categories */
+
+/* Start Section Program */
+
+.program .container > h2 {
+    margin-bottom: 19px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .program .container > h2 {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .program .container > h2 {
+        width: 485px;
+    }
+}
+
+.program .container > p {
+    color: gray;
+    width: 790px;
+    line-height: 150%;
+}
+
+@media (max-width: 767px) {
+    .program .container > p {
+        width: fit-content;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .program .container > p {
+        width: 473px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .program .container > p {
+        width: 610px;
+    }
+}
+
+.program .container > p:not(:last-of-type) {
+    margin-bottom: 37px;
+}
+
+.program .container > p:last-of-type {
+    margin-bottom: 86px;
+}
+
+.program .container .comment {
+    border: 1px solid rgb(0 0 0);
+    padding: 24px 20px 18px;
+    width: 775px;
+    margin-bottom: 231px;
+    min-width: 160px;
+}
+
+@media (max-width: 767px) {
+    .program .container .comment,
+    .program .container .comment {
+        max-width: 100%;
+        margin-left: 38px;
+        margin-right: 38px;
+        width: calc(100% - (38px * 2));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .program .container .comment {
+        width: 497px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .program .container .comment {
+        width: 610px;
+    }
+}
+
+.program .container .comment h3 {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+    .program .container .comment form,
+    .program .container .comment form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .program .container .comment form div,
+    .program .container .comment form div  {
+        max-width: 100%;
+    }
+}
+
+.program .container .comment input,
+.program .container .comment textarea {
+    border: none;
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: 16px;
+    padding: 12px 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .program .container .comment input,
+    .program .container .comment textarea {
+        max-width: 100%;
+    }
+}
+
+.program .container .comment textarea {
+    height: 123px;
+}
+
+.program .container .comment button {
+    background-color: #0091ff;
+    border: none;
+    color: #FFF;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* End Section Program */
+
+/* Start Section Maps */
+
+.maps {
+    margin-bottom: 120px;
+    min-width: 234px;
+}
+
+@media (max-width: 767px) {
+    .maps {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+}
+
+.maps .container iframe {
+    width: 100%;
+    height: 442px;
+}
+
+/* End Section Maps */
+
+/* Start Section Details */
+
+.details {
+    margin-bottom: 228px;
+}
+
+.details .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .details .container {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .details .container {
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details .container {
+        grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    }
+}
+
+.details .container .contact-info > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 74px;
+}
+
+@media (max-width: 767px) {
+    .details .container .contact-info > div {
+        justify-content: center;
+    }
+}
+
+.details .container .contact-info > div > i {
+    color: #f44336;
+    font-size: 19px;
+}
+
+.details .container .contact-info > div .text {
+    text-align: center;
+}
+
+.details .container .contact-info > div .text h4 {
+    margin-bottom: 5px;
+}
+
+.details .container .contact-info > div .text p {
+    color: gray;
+}
+
+.details .container .data {
+    margin-top: -29px;
+    margin-left: 95px;
+}
+
+@media (max-width: 767px) {
+    .details .container .data {
+        margin-left: 0;
+    }
+}
+
+.details .container .data h3 {
+    margin-bottom: 22px;
+    text-align: center;
+    width: 496px;
+}
+
+@media (max-width: 767px) {
+    .details .container .data h3 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .details .container .data h3,
+    .details .container .data h3 {
+        width: 264px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details .container .data h3,
+    .details .container .data h3 {
+        width: 368px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1287px) {
+    .details .container .data h3,
+    .details .container .data h3 {
+        width: 408px;
+    }
+}
+
+.details .container .data form {
+    min-width: 173px;
+}
+
+.details .container .data div:last-of-type {
+    text-align: center;
+    width: 496px;
+}
+
+@media (max-width: 767px) {
+    .details .container .data div:last-of-type {
+        margin-left: 27px;
+        margin-right: 27px;
+        width: calc(100% - (27px * 2));
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .details .container .data div:last-of-type,
+    .details .container .data div:last-of-type {
+        width: 264px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details .container .data div:last-of-type,
+    .details .container .data div:last-of-type {
+        width: 368px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1287px) {
+    .details .container .data div:last-of-type,
+    .details .container .data div:last-of-type {
+        width: 408px;
+    }
+}
+
+.details .container .data input,
+.details .container .data textarea {
+    border: none;
+    width: 496px;
+    background-color: #eee;
+    margin-bottom: 16px;
+    padding: 12px 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .details .container .data input,
+    .details .container .data textarea {
+        margin-left: 27px;
+        margin-right: 27px;
+        width: calc(100% - (27px * 2));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .details .container .data input,
+    .details .container .data textarea {
+        width: 264px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details .container .data input,
+    .details .container .data textarea {
+        width: 368px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1287px) {
+    .details .container .data input,
+    .details .container .data textarea {
+        width: 408px;
+    }
+}
+
+.details .container .data textarea {
+    height: 123px;
+}
+
+.details .container .data button {
+    background-color: #0091ff;
+    border: none;
+    color: #FFF;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* End Section Details */
